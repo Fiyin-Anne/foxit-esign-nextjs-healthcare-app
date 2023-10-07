@@ -5,7 +5,7 @@ const HomePage = () => {
     <div className="h-[calc(100vh-60px)] bg-gray-200 w-full flex flex-col justify-center items-center space-y-9">
       <div className="card w-96 bg-base-100 shadow-xl">
         <div className="card-body">
-          <h2 className="card-title">Patient Registeration</h2>
+          <h2 className="card-title">Patient Registration</h2>
           <p>Register a new patient.</p>
           <div className="card-actions justify-end">
             <Link
