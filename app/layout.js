@@ -1,6 +1,7 @@
 import './globals.css'
 import { Roboto } from 'next/font/google'
 import NavBar from './components/NavBar';
+import {SocketProvider} from './components/SocketProvider';
 
 const roboto = Roboto({
   weight: '300',
@@ -17,8 +18,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" data-theme="bumblebee">
       <body className={roboto.className}>
-      <NavBar />
+        <SocketProvider>
+        <NavBar />
         {children}
+        </SocketProvider>
+      
       </body>
     </html>
   )
